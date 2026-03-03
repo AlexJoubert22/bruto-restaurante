@@ -43,10 +43,10 @@ function AllergenBadges({ allergens, t }: { allergens: AllergenKey[]; t: (k: str
 }
 
 const categories = [
-  { id: 'entrantes', name: 'Entrantes', image: '/PLato_entrantes.png' },
+  { id: 'entrantes', name: 'Entrantes', image: '/plato_entrantes.png' },
   { id: 'principales', name: 'Platos Principales', image: '/pulpo.png' },
   { id: 'pizzas', name: 'Pizzas', image: '/pizza.png' },
-  { id: 'pastas', name: 'Pastas', image: '/pasta desde arriba.png' },
+  { id: 'pastas', name: 'Pastas', image: '/pasta_desde_arriba.png' },
   { id: 'postres', name: 'Postres', image: '/tiramisu.png' },
   { id: 'vinos', name: 'Carta de Vinos', image: '/vino.webp' },
 ];
