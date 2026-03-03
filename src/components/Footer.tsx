@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="mb-6 flex justify-center md:justify-start">
               <img
-                src="/logosinfondo1.png"
+                src="/logosinfondo1.webp"
                 alt="Bruto"
                 className="h-10 w-auto object-contain"
                 referrerPolicy="no-referrer"

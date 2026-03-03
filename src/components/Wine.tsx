@@ -88,7 +88,7 @@ export default function Wine() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/barrabruto.png"
+            src="/barrabruto.webp"
             alt="Bruto Bar"
             className="w-full h-full object-cover opacity-60"
           />

@@ -43,11 +43,11 @@ function AllergenBadges({ allergens, t }: { allergens: AllergenKey[]; t: (k: str
 }
 
 const categories = [
-  { id: 'entrantes', name: 'Entrantes', image: '/plato_entrantes.png' },
-  { id: 'principales', name: 'Platos Principales', image: '/pulpo.png' },
-  { id: 'pizzas', name: 'Pizzas', image: '/pizza.png' },
-  { id: 'pastas', name: 'Pastas', image: '/pasta_desde_arriba.png' },
-  { id: 'postres', name: 'Postres', image: '/tiramisu.png' },
+  { id: 'entrantes', name: 'Entrantes', image: '/plato_entrantes.webp' },
+  { id: 'principales', name: 'Platos Principales', image: '/pulpo.webp' },
+  { id: 'pizzas', name: 'Pizzas', image: '/pizza.webp' },
+  { id: 'pastas', name: 'Pastas', image: '/pasta_desde_arriba.webp' },
+  { id: 'postres', name: 'Postres', image: '/tiramisu.webp' },
   { id: 'vinos', name: 'Carta de Vinos', image: '/vino.webp' },
 ];
 
@@ -243,7 +243,7 @@ export default function FullMenu() {
         <section className="relative h-[50vh] md:h-[60vh] w-full flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/mesa_completa.png"
+              src="/mesa_completa.webp"
               alt="Bruto Menu"
               className="w-full h-full object-cover opacity-30"
               referrerPolicy="no-referrer"

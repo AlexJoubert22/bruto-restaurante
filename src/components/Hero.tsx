@@ -37,9 +37,9 @@ export default function Hero() {
           transition={{ duration: 1.4, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="flex justify-center mb-8"
         >
-          <img 
-            src="/logosinfondo1.png" 
-            alt="Bruto" 
+          <img
+            src="/logosinfondo1.webp"
+            alt="Bruto"
             className="h-32 md:h-48 lg:h-64 w-auto object-contain"
             referrerPolicy="no-referrer"
           />

@@ -9,7 +9,7 @@ export default function Navbar() {
   const { lang, setLang, t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  
+
   const location = useLocation();
   const isMenuPage = location.pathname === '/menu';
 
@@ -70,22 +70,20 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled || isMenuPage ? 'py-4' : 'py-6'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled || isMenuPage ? 'py-4' : 'py-6'
+        }`}
     >
       {/* Separate background layer to prevent mix-blend-mode issues with backdrop-filter */}
-      <div className={`absolute inset-0 transition-colors duration-500 ${
-        isScrolled || isMenuPage ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'
-      }`} />
+      <div className={`absolute inset-0 transition-colors duration-500 ${isScrolled || isMenuPage ? 'bg-black/90 backdrop-blur-md' : 'bg-transparent'
+        }`} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1 flex justify-start">
           <a href="/" className="flex items-center justify-center">
-            <img 
-              src="/logosinfondo1.png" 
-              alt="Bruto" 
+            <img
+              src="/logosinfondo1.webp"
+              alt="Bruto"
               className="h-8 md:h-10 w-auto object-contain"
               referrerPolicy="no-referrer"
             />
@@ -103,9 +101,8 @@ export default function Navbar() {
                   key={link.name}
                   to={link.href}
                   onClick={(e) => handleNavClick(e as any, link.href)}
-                  className={`relative text-sm uppercase tracking-widest transition-colors duration-300 ${
-                    isActive ? 'text-[#c5a059]' : 'text-white/70 hover:text-white'
-                  }`}
+                  className={`relative text-sm uppercase tracking-widest transition-colors duration-300 ${isActive ? 'text-[#c5a059]' : 'text-white/70 hover:text-white'
+                    }`}
                 >
                   {link.name}
                   {isActive && (
@@ -125,18 +122,16 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <button
               onClick={() => setLang('ES')}
-              className={`text-xs tracking-widest transition-colors ${
-                lang === 'ES' ? 'text-white font-medium' : 'text-white/50 hover:text-white'
-              }`}
+              className={`text-xs tracking-widest transition-colors ${lang === 'ES' ? 'text-white font-medium' : 'text-white/50 hover:text-white'
+                }`}
             >
               ES
             </button>
             <span className="text-white/20">|</span>
             <button
               onClick={() => setLang('EN')}
-              className={`text-xs tracking-widest transition-colors ${
-                lang === 'EN' ? 'text-white font-medium' : 'text-white/50 hover:text-white'
-              }`}
+              className={`text-xs tracking-widest transition-colors ${lang === 'EN' ? 'text-white font-medium' : 'text-white/50 hover:text-white'
+                }`}
             >
               EN
             </button>
@@ -187,9 +182,8 @@ export default function Navbar() {
                   key={link.name}
                   to={link.href}
                   onClick={(e) => handleNavClick(e as any, link.href)}
-                  className={`text-2xl font-serif tracking-widest transition-colors ${
-                    isActive ? 'text-[#c5a059]' : 'text-white/80 hover:text-white'
-                  }`}
+                  className={`text-2xl font-serif tracking-widest transition-colors ${isActive ? 'text-[#c5a059]' : 'text-white/80 hover:text-white'
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -209,18 +203,16 @@ export default function Navbar() {
             <div className="flex items-center space-x-6 pt-8 border-t border-white/10 w-48 justify-center">
               <button
                 onClick={() => setLang('ES')}
-                className={`text-sm tracking-widest ${
-                  lang === 'ES' ? 'text-white' : 'text-white/50'
-                }`}
+                className={`text-sm tracking-widest ${lang === 'ES' ? 'text-white' : 'text-white/50'
+                  }`}
               >
                 ES
               </button>
               <span className="text-white/20">|</span>
               <button
                 onClick={() => setLang('EN')}
-                className={`text-sm tracking-widest ${
-                  lang === 'EN' ? 'text-white' : 'text-white/50'
-                }`}
+                className={`text-sm tracking-widest ${lang === 'EN' ? 'text-white' : 'text-white/50'
+                  }`}
               >
                 EN
               </button>
